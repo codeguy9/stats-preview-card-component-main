@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    background: hsl(233, 47%, 7%);
+    
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    height: 80vh;
+    align-items: center;
+    
+}
+
+.text {
+    padding: 3rem;
+    background: hsl(244, 38%, 16%);
+    height: 22.3rem;
+    max-width: 27rem;
+}
+
+.text h1 {
+    color: white;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.text h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 5rem;
+    line-height: 1.5
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.companies {
+    width: 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.tiny-word {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Daca, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 540px;
+    height: 445px;
+    background:hsl(277, 64%, 61%);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+/*   Mobile   */   
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+    }
+
+    .image img, .overlay, .text {
+        
+        max-width: 100%;
+    }
+
+    
+}
